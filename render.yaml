@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: n8n
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: GENERIC_TIMEZONE
+        value: Europe/Berlin
+      - key: N8N_PORT
+        value: 5678
+      - key: WEBHOOK_URL
+        value: https://your-app-name.onrender.com/
